@@ -1,0 +1,235 @@
+header{
+    display: flex;
+}
+
+header h1{
+    margin-left: 100px;
+}
+
+.title{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    text-align: center; 
+}
+
+.title span{
+    margin: 2px;
+}
+
+.title span:nth-child(1){
+    color:#08A097;
+}
+
+.title span:nth-child(2){
+    color:#EFB5BA;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    width: 80%;
+}
+
+.menu ul li {
+    margin: 10px;
+    color: #009D95;
+}
+
+.down-arrow {
+    display: inline-block;
+    transform: rotate(-90deg);
+}
+
+.icons{
+    color: #009D95;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-shop::before {
+    content: "\1F3E2"; 
+}
+
+.contenido {
+    display: none;
+}
+
+.icon-search:hover + .contenido {
+    display: block;
+}
+
+.icons ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icons ul li{
+    margin: 10px;
+}
+
+main {
+    background-image: url('img/sky.jpg'); /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 518px;
+}
+
+.product{
+    color: #FFF;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.product p{
+    margin: 0;
+    font-size: 40px;
+}
+
+.product .protection{
+    font-size: 100px;
+    line-height: 0.6;
+}
+
+.product .anouncement{
+    font-size: 18px;
+
+}
+
+.new span:nth-child(1){
+    color: yellow;
+    margin-right: 5px;
+    font-size: 30px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+
+.type{
+    background-color: #FFF;
+    color: #4286dc;
+    border-radius: 1em;
+    padding: 2px;
+}
+
+.slogan{
+    color: #FFF;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    font-size: 25px;
+}
+
+.gift {
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    background-color: #EA9FA6;
+    border-radius: 3em;
+    top: 92%; 
+    left: 5%; 
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gift i {
+    margin-right: 10px;
+}
+
+.chat {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #EA9FA6;
+    border-radius: 100%;
+    top: 90%; 
+    left: 90%; 
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat i {
+    font-size: 30px;
+}
+
+.notification{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 100%;
+    bottom: 45%; 
+    right: 5%; 
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+
+.dropdown-menu{
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .menu{
+        display: none;
+    }
+
+    .dropdown-menu{
+        display: block;
+    }
+
+    header h1{
+        margin: 0;
+    }
+
+    .icons{
+        margin: 0;
+    }
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+    header{
+        flex-direction: column;
+        align-items: flex-start; /* Cambiado a flex-start para alinear a la izquierda */
+    }
+
+    .menu{
+        margin-left: -120px;
+    }
+
+    .menu ul {
+        justify-content: start;
+        width: 75%;
+    }
+
+    header h1{
+        margin: 0;
+    }
+    
+}
+
+
+
+
